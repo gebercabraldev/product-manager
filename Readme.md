@@ -1,3 +1,4 @@
+<img width="1536" height="1024" alt="ChatGPT Image 25 de jul  de 2025, 00_32_20" src="https://github.com/user-attachments/assets/47aebdca-c76b-4a5c-b9f4-6117ae5b3ea2" />
 # 🛒 Product Manager
 
 Sistema de gestão de produtos desenvolvido com **Spring Boot (Java)** no backend e **Angular** no frontend. Este projeto simula o cadastro, listagem, atualização e exclusão de produtos, ideal para portfólios de desenvolvedores Full Stack.
