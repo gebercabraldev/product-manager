@@ -64,13 +64,16 @@ Ideal para demonstrar domínio em arquitetura de software moderna, autenticaçã
 - PostgreSQL
 
 ▶️ Passos para rodar o projeto
+
 1️⃣ Clone o repositório:
 bash
 Copiar
 Editar
 git clone https://github.com/seu-usuario/product-manager.git
 cd product-manager
+
 2️⃣ Configure o banco PostgreSQL
+
 🔹 Opção 1: Usar PostgreSQL via Docker (recomendado)
 bash
 Copiar
@@ -81,6 +84,7 @@ docker run --name product-db \
   -e POSTGRES_PASSWORD=admin \
   -p 5432:5432 \
   -d postgres
+  
 🔹 Opção 2: Configuração manual local
 Acesse o PostgreSQL (ex: psql, DBeaver, pgAdmin)
 
@@ -100,6 +104,7 @@ GRANT ALL PRIVILEGES ON DATABASE productdb TO admin;
 ⚠️ Se precisar alterar credenciais, edite o arquivo src/main/resources/application.properties no backend.
 
 3️⃣ Execute o backend
+
 bash
 Copiar
 Editar
@@ -111,13 +116,16 @@ bash
 Copiar
 Editar
 mvnw.cmd spring-boot:run
+
 4️⃣ Execute o frontend
+
 bash
 Copiar
 Editar
 cd ../frontend
 npm install
 ng serve
+
 5️⃣ Acesse no navegador:
 Frontend: 👉 http://localhost:4200
 
