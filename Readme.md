@@ -1,73 +1,68 @@
-
+<img width="1536" height="1024" alt="ChatGPT Image 25 de jul  de 2025, 00_32_20" src="https://github.com/user-attachments/assets/47aebdca-c76b-4a5c-b9f4-6117ae5b3ea2" />
 # 🛒 Product Manager
 
-> Aplicação full stack para gerenciamento de produtos com Java e Angular.
+Sistema de gestão de produtos desenvolvido com **Spring Boot (Java)** no backend e **Angular** no frontend. Este projeto simula o cadastro, listagem, atualização e exclusão de produtos, ideal para portfólios de desenvolvedores Full Stack.
 
-## 📌 Sobre o Projeto (Português)
+## 🚀 Tecnologias utilizadas
 
-O **Product Manager** é uma aplicação desenvolvida com o objetivo de gerenciar produtos, permitindo operações de **CRUD (Create, Read, Update, Delete)** via API RESTful.  
-Ele utiliza **Spring Boot** no backend com persistência em banco de dados relacional (SQL Server / DB2) e pode ser integrado com um frontend em **Angular**.
-
-### ✨ Funcionalidades
-
-- Cadastrar produtos
-- Listar todos os produtos
-- Buscar produto por ID
-- Atualizar produto
-- Remover produto
-
-### 🛠️ Tecnologias utilizadas
-
-- Java 8
+### Backend
+- Java 17
 - Spring Boot
 - Spring Data JPA
-- Jakarta Bean Validation
-- DB2
-- JUnit 5
-- MockMvc
-- Git 
+- Spring Web
+- Spring Security (JWT)
+- PostgreSQL
+- Swagger / OpenAPI
+- Maven
+
+### Frontend
+- Angular 14+
+- TypeScript
+- Angular Material
+- RxJS
+- SCSS
+
+### DevOps e outros
+- Docker
+- Git
+- GitHub Actions (CI/CD)
+- Postman (testes de API)
+
+## 📸 Capturas de tela
+
+> *(Insira aqui prints da interface Angular e testes de API no Postman, se desejar)*
+
+## 🧠 Funcionalidades
+
+- ✅ Cadastro, edição, listagem e remoção de produtos
+- 🔐 Autenticação com JWT
+- ⚙️ Validações no backend e frontend
+- 📊 Documentação da API com Swagger
+
+## 🔧 Como rodar o projeto localmente
+
+### Pré-requisitos
+- Java 17
+- Node.js + Angular CLI
+- Docker
+- PostgreSQL
+
+### Passos
+1. Clone o projeto:
+
+2. Execute o backend:
+
+3. Execute o frontend:
+
+4. Acesse:
+- Frontend: `http://localhost:4200`
+- Backend (Swagger): `http://localhost:8080/swagger-ui/index.html`
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
 
 ---
 
-## 📌 About the Project (English)
-
-**Product Manager** is a full stack application built to manage products with full **CRUD operations** exposed through a REST API.  
-The backend uses **Spring Boot** with a relational database (SQL Server / DB2) and it can be integrated with a frontend built in **Angular**.
-
-### ✨ Features
-
-- Create new products
-- List all products
-- Get product by ID
-- Update existing products
-- Delete products
-
-### 🛠️ Technologies
-
-- Java 8
-- Spring Boot
-- Spring Data JPA
-- Jakarta Bean Validation
-- DB2
-- JUnit 5
-- MockMvc
-- Git 
-
----
-
-## 🚀 Como executar o projeto / How to run the project
-
-```bash
-# Clonar o repositório
-git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
-
-# Navegar para a pasta
-cd product-manager
-
-# Build com Maven
-./mvnw clean install
-
-# Executar a aplicação
-./mvnw spring-boot:run
-
+Desenvolvido por [Geber Cabral](https://linkedin.com/in/geberdev) 💻
 
