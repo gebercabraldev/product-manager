@@ -1,70 +1,50 @@
 # 🛒 Product Manager
 
-> Aplicação full stack para gerenciamento de produtos com Java e Angular.
+Sistema de gestão de produtos desenvolvido com **Spring Boot (Java)** no backend e **Angular** no frontend. Este projeto simula o cadastro, listagem, atualização e exclusão de produtos, ideal para portfólios de desenvolvedores Full Stack.
 
-## 📌 Sobre o Projeto (Português)
+## 🚀 Tecnologias utilizadas
 
-O **Product Manager** é uma aplicação desenvolvida com o objetivo de gerenciar produtos, permitindo operações de **CRUD (Create, Read, Update, Delete)** via API RESTful.  
-Ele utiliza **Spring Boot** no backend com persistência em banco de dados relacional (SQL Server / DB2) e pode ser integrado com um frontend em **Angular**.
-
-### ✨ Funcionalidades
-
-- Cadastrar produtos
-- Listar todos os produtos
-- Buscar produto por ID
-- Atualizar produto
-- Remover produto
-
-### 🛠️ Tecnologias utilizadas
-
-- Java 8
+### Backend
+- Java 17
 - Spring Boot
 - Spring Data JPA
-- Jakarta Bean Validation
-- DB2
-- JUnit 5
-- MockMvc
-- Git 
+- Spring Web
+- Spring Security (JWT)
+- PostgreSQL
+- Swagger / OpenAPI
+- Maven
 
----
+### Frontend
+- Angular 14+
+- TypeScript
+- Angular Material
+- RxJS
+- SCSS
 
-## 📌 About the Project (English)
+### DevOps e outros
+- Docker
+- Git
+- GitHub Actions (CI/CD)
+- Postman (testes de API)
 
-**Product Manager** is a full stack application built to manage products with full **CRUD operations** exposed through a REST API.  
-The backend uses **Spring Boot** with a relational database (SQL Server / DB2) and it can be integrated with a frontend built in **Angular**.
+## 📸 Capturas de tela
 
-### ✨ Features
+> *(Insira aqui prints da interface Angular e testes de API no Postman, se desejar)*
 
-- Create new products
-- List all products
-- Get product by ID
-- Update existing products
-- Delete products
+## 🧠 Funcionalidades
 
-### 🛠️ Technologies
+- ✅ Cadastro, edição, listagem e remoção de produtos
+- 🔐 Autenticação com JWT
+- ⚙️ Validações no backend e frontend
+- 📊 Documentação da API com Swagger
 
-- Java 8
-- Spring Boot
-- Spring Data JPA
-- Jakarta Bean Validation
-- DB2
-- JUnit 5
-- MockMvc
-- Git 
+## 🔧 Como rodar o projeto localmente
 
----
+### Pré-requisitos
+- Java 17
+- Node.js + Angular CLI
+- Docker
+- PostgreSQL
 
-## 🚀 Como executar o projeto / How to run the project
-
-```bash
-# Clonar o repositório
-git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
-
-# Navegar para a pasta
-cd product-manager
-
-# Build com Maven
-./mvnw clean install
-
-# Executar a aplicação
-./mvnw spring-boot:run
+### Passos
+1. Clone o projeto:
