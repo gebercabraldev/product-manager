@@ -1,69 +1,125 @@
-<img width="1536" height="1024" alt="ChatGPT Image 25 de jul  de 2025, 00_32_20" src="https://github.com/user-attachments/assets/47aebdca-c76b-4a5c-b9f4-6117ae5b3ea2" />
 # 🛒 Product Manager
 
-Sistema de gestão de produtos desenvolvido com **Spring Boot (Java)** no backend e **Angular** no frontend. Este projeto simula o cadastro, listagem, atualização e exclusão de produtos, ideal para portfólios de desenvolvedores Full Stack.
+[![Java](https://img.shields.io/badge/Java-17-blue?logo=java)](https://www.oracle.com/java/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7-green?logo=springboot)](https://spring.io/projects/spring-boot)
+[![Angular](https://img.shields.io/badge/Angular-14+-red?logo=angular)](https://angular.io/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23336791.svg?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?logo=docker&logoColor=white)](https://www.docker.com/)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/seu-usuario/product-manager/ci.yml?label=CI&logo=githubactions)](https://github.com/seu-usuario/product-manager/actions)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
-## 🚀 Tecnologias utilizadas
+---
 
-### Backend
+Sistema **Full Stack** para gestão de produtos, desenvolvido com **Java + Spring Boot** no backend e **Angular** no frontend.  
+Ideal para demonstrar domínio em arquitetura de software moderna, autenticação JWT e integração com banco relacional.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+### 🖥️ Backend
 - Java 17
-- Spring Boot
-- Spring Data JPA
-- Spring Web
-- Spring Security (JWT)
+- Spring Boot (Web, Security, Data JPA)
 - PostgreSQL
+- JWT para autenticação
 - Swagger / OpenAPI
 - Maven
 
-### Frontend
+### 💻 Frontend
 - Angular 14+
-- TypeScript
 - Angular Material
+- TypeScript + SCSS
 - RxJS
-- SCSS
 
-### DevOps e outros
+### ⚙️ DevOps e Ferramentas
 - Docker
-- Git
+- Git e GitHub
 - GitHub Actions (CI/CD)
-- Postman (testes de API)
+- Postman
 
-## 📸 Capturas de tela
+---
 
-> *(Insira aqui prints da interface Angular e testes de API no Postman, se desejar)*
+## 📸 Capturas de Tela
+
+> *(Adicione aqui imagens do sistema rodando: telas do Angular e requisições no Postman com JWT, por exemplo)*
+
+---
 
 ## 🧠 Funcionalidades
 
-- ✅ Cadastro, edição, listagem e remoção de produtos
+- ✅ CRUD de Produtos (Create, Read, Update, Delete)
 - 🔐 Autenticação com JWT
-- ⚙️ Validações no backend e frontend
-- 📊 Documentação da API com Swagger
+- ⚙️ Validações robustas (frontend e backend)
+- 📑 Documentação da API com Swagger
+- 📦 Docker para facilitar o deploy local
 
-## 🔧 Como rodar o projeto localmente
+---
 
-### Pré-requisitos
+## 🛠️ Como Executar Localmente
+
+### ✅ Pré-requisitos
 - Java 17
 - Node.js + Angular CLI
 - Docker
 - PostgreSQL
 
-### Passos
-1. Clone o projeto:
+▶️ Passos para rodar o projeto
+1️⃣ Clone o repositório:
+bash
+Copiar
+Editar
+git clone https://github.com/seu-usuario/product-manager.git
+cd product-manager
+2️⃣ Configure o banco PostgreSQL
+🔹 Opção 1: Usar PostgreSQL via Docker (recomendado)
+bash
+Copiar
+Editar
+docker run --name product-db \
+  -e POSTGRES_DB=productdb \
+  -e POSTGRES_USER=admin \
+  -e POSTGRES_PASSWORD=admin \
+  -p 5432:5432 \
+  -d postgres
+🔹 Opção 2: Configuração manual local
+Acesse o PostgreSQL (ex: psql, DBeaver, pgAdmin)
 
-2. Execute o backend:
+Crie o banco de dados:
 
-3. Execute o frontend:
+sql
+Copiar
+Editar
+CREATE DATABASE productdb;
+Crie o usuário e a senha (caso não existam):
 
-4. Acesse:
-- Frontend: `http://localhost:4200`
-- Backend (Swagger): `http://localhost:8080/swagger-ui/index.html`
+sql
+Copiar
+Editar
+CREATE USER admin WITH PASSWORD 'admin';
+GRANT ALL PRIVILEGES ON DATABASE productdb TO admin;
+⚠️ Se precisar alterar credenciais, edite o arquivo src/main/resources/application.properties no backend.
 
-## 📄 Licença
+3️⃣ Execute o backend
+bash
+Copiar
+Editar
+cd backend
+./mvnw spring-boot:run
+Ou, se estiver no Windows:
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
+bash
+Copiar
+Editar
+mvnw.cmd spring-boot:run
+4️⃣ Execute o frontend
+bash
+Copiar
+Editar
+cd ../frontend
+npm install
+ng serve
+5️⃣ Acesse no navegador:
+Frontend: 👉 http://localhost:4200
 
----
-
-Desenvolvido por [Geber Cabral](https://linkedin.com/in/geberdev) 💻
-
+Backend (Swagger): 👉 http://localhost:8080/swagger-ui/index.html
 
