@@ -1,3 +1,4 @@
+<img width="1536" height="1024" alt="ChatGPT Image 25 de jul  de 2025, 00_32_20" src="https://github.com/user-attachments/assets/83a8e5b3-ac98-4654-b5ed-8e6d2e6a6e4b" />
 # 🛒 Product Manager
 
 [![Java](https://img.shields.io/badge/Java-17-blue?logo=openjdk)](https://www.oracle.com/java/)
