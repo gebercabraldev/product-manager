@@ -48,3 +48,20 @@ Sistema de gestão de produtos desenvolvido com **Spring Boot (Java)** no backen
 
 ### Passos
 1. Clone o projeto:
+
+2. Execute o backend:
+
+3. Execute o frontend:
+
+4. Acesse:
+- Frontend: `http://localhost:4200`
+- Backend (Swagger): `http://localhost:8080/swagger-ui/index.html`
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
+
+---
+
+Desenvolvido por [Geber Cabral](https://linkedin.com/in/geberdev) 💻
+
